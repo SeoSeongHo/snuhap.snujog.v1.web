@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using snuhap.snujog.v1.web.Models.Login;
 
 namespace snuhap.snujog.v1.web
 {
@@ -31,7 +33,8 @@ namespace snuhap.snujog.v1.web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddDbContext<LoginContext>(opt =>
+                opt.UseInMemoryDatabase("UserInfo"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
