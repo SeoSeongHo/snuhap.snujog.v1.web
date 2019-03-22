@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snuhap.snujog.v1.web", "snuhap.snujog.v1.web\snuhap.snujog.v1.web.csproj", "{44D5054A-9EB3-491D-A27D-1962537F5C01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "snuhap.snujog.v1.web", "apps\snuhap.snujog.v1.web\snuhap.snujog.v1.web.csproj", "{44D5054A-9EB3-491D-A27D-1962537F5C01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snuhap.snujog.library.core", "snuhap.snujog.library.core\snuhap.snujog.library.core.csproj", "{CF5930CC-ADFD-4D20-8173-A27126BABAC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "snuhap.snujog.library.core", "out_library\snuhap.snujog.library.core\snuhap.snujog.library.core.csproj", "{CF5930CC-ADFD-4D20-8173-A27126BABAC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{94FC4AC5-2ED8-443B-A7EF-D84BA857EBE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "out_library", "out_library", "{73EBCE0D-F8FE-4286-9ED0-B2F3413AFD10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44D5054A-9EB3-491D-A27D-1962537F5C01} = {94FC4AC5-2ED8-443B-A7EF-D84BA857EBE8}
+		{CF5930CC-ADFD-4D20-8173-A27126BABAC7} = {73EBCE0D-F8FE-4286-9ED0-B2F3413AFD10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {745F8A20-C310-4C44-83B5-A8278B7BFAD4}
