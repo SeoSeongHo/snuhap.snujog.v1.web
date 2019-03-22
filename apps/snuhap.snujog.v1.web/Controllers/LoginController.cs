@@ -8,9 +8,9 @@ using snuhap.snujog.v1.web.Models.Login;
 
 namespace snuhap.snujog.v1.web.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class LoginController : ControllerBase
+    public class LoginController : Controller
     {
         private readonly LoginContext _context;
 
@@ -19,7 +19,12 @@ namespace snuhap.snujog.v1.web.Controllers
             _context = context;
         }
 
-        [HttpPost]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        /*[HttpPost]
         public async Task<ActionResult<Login>> PostLogin(Login info)
         {
             var isCorrect = _context.Infos.Find(info.Username, info.Password);
@@ -32,6 +37,6 @@ namespace snuhap.snujog.v1.web.Controllers
             {
 
             }
-        }
+        }*/
     }
 }

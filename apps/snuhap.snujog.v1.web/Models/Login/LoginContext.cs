@@ -9,6 +9,6 @@ namespace snuhap.snujog.v1.web.Models.Login
         {
         }
 
-        public DbSet<Login> Logins { get; set; }
+        public DbSet<Login> Infos { get; set; }
     }
 }
