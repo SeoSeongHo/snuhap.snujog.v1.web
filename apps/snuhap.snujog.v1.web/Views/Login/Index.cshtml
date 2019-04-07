@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .login_form {
+            margin: 20px;
+            align-content: center;
+            flex: auto;
+            border: 1px solid;
+            color: black;
+            box-shadow: 3px 3px 3px 3px #999;
+            width: 600px;
+            height: 420px;
+            margin-left: auto;
+            position: absolute;
+            top: 50%;
+            margin-top: -210px;
+            left: 50%;
+            margin-left: -300px;
+        }
+
+        .form-group {
+            width: 450px;
+            margin-left: 75px;
+        }
+
+        .login_label {
+            background-color: cornflowerblue;
+            border-collapse: collapse;
+            height: 70px;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .login_info {
+            align-content: center;
+            margin-top: 60px;
+        }
+
+        .checkbox {
+            margin-left: 75px;
+        }
+
+        .btn-primary {
+            margin-left: 75px;
+        }
+
+        .forgot {
+            background-color: darkgray;
+            border-collapse: collapse;
+            height: 30px;
+            width: inherit;
+            line-height: 30px;
+            color: black;
+            font-size: 15px;
+            text-align: center;
+            vertical-align: bottom;
+            text-decoration-line: underline;
+            align-content: center;
+            font-style: italic;
+            position: absolute;
+            bottom: 0px;
+            cursor: pointer;
+        }
+
+        .wrapper {
+            position: relative;
+            margin-top: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login_form">
+            <div class="login_label">Member Login</div>
+            <form class="login_info" action="/examples/actions/confirmation.php" method="post">
+                <div class="form-group">
+                    <label for="inputUsername">Uername</label>
+                    <input class="form-control" id="inputUsername" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="forgot">forgot password?</div>
+        </div>
+    </div>
+</body>
+</html>                            
